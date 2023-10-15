@@ -1,15 +1,14 @@
-import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
     return(
-        <div className="w-screen h-screen">  
-            <div className="w-full h-[50px] px-[5%] flex justify-between items-center">
+            <div className="h-[55px] px-[7%] flex shrink-0 justify-between items-center">
                 <div className="flex justify-between w-3/5">
                     <div className="w-[10%]">
-                        Navbar
+                        <Link to='/'>
+                            Navbar
+                        </Link>
                     </div>
                     
                     <div className="flex items-center w-4/5">
@@ -53,9 +52,5 @@ export default function Navbar(){
                 </div>
             </div>
 
-            <Outlet />
-
-            <Footer />
-        </div>
     )
 }

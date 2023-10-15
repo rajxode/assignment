@@ -2,17 +2,17 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 
 import LandingPage from "./Pages/LandingPage"
 import DetailsPage from "./Pages/DetailsPage"
-import Navbar from "./Components/Navbar"
+import HomePage from "./Pages/HomePage"
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path:'/',
-      element:<Navbar />,
+      element:<LandingPage />,
       errorElement:<Error />,
       children:[
-        { index:true , element:<LandingPage /> },
+        { index:true , element:<HomePage /> },
         { path:'/detail' , element:<DetailsPage /> }
       ]
     }
