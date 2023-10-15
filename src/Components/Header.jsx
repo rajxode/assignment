@@ -2,7 +2,7 @@
 
 export default function Header(){
     return(
-        <div className="w-full h-[70vh] flex px-[7%] py-[20px] justify-between" 
+        <div className="w-full h-[70vh] flex px-[7%] py-[20px] justify-between bg-slate-100" 
             style={{backgroundImage: "linear-gradient(138deg, rgb(255 255 255) 0%, rgb(213 241 253) 100%)"}} >
             
             <div className="w-1/2 h-full flex flex-col my-6">
@@ -31,9 +31,16 @@ export default function Header(){
                 
             </div>
             
-            <div className="w-2/5 h-full">
-                Image
-                <img src="" alt="image" />
+            <div className="w-[45%] h-full flex flex-wrap justify-between">
+                <div className="w-[32%] h-full">
+                    <img src='/head-1.png' alt="image" className="w-full" />
+                </div>
+                <div className="w-[32%] h-full">
+                    <img src='/head-2.png' alt="image" className="w-full" />
+                </div>
+                <div className="w-[32%] h-full">
+                    <img src='/head-3.png' alt="image" className="w-full" />
+                </div>
             </div>
         </div>
     )

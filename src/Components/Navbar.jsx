@@ -5,9 +5,9 @@ export default function Navbar(){
     return(
             <div className="h-[55px] px-[7%] flex shrink-0 justify-between items-center">
                 <div className="flex justify-between w-3/5">
-                    <div className="w-[10%]">
+                    <div className="w-[15%]">
                         <Link to='/'>
-                            Navbar
+                            <img src="/logo.png" alt="logo" className="w-full h-[35px]" />
                         </Link>
                     </div>
                     

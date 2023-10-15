@@ -3,10 +3,11 @@
 export default function Footer(){
 
     return(
-        <div className="h-[300px] flex flex-col text-white shrink-0" 
+        <div className="h-[350px] flex flex-col text-white shrink-0 pt-[2%]" 
             style={{backgroundImage: "linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%)"}}>
 
             <div className="w-full h-[85%] flex flex-col py-2 px-[7%]">
+                
                 <div className="w-full h-4/5 flex justify-between">
                     
                     <div className="w-1/5 h-full flex flex-col">
@@ -19,7 +20,7 @@ export default function Footer(){
                         </div>
                     </div>
                     
-                    <div className="w-4/5 h-full flex justify-between">
+                    <div className="w-3/5 h-full flex justify-around">
                         
                         <div className="w-1/5 flex flex-col h-full">
                             <h1 className="font-semibold w-full">

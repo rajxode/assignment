@@ -40,10 +40,10 @@ const stepsToJoin = [
     }
 ];
 
-export default function Main(){
+export default function Join(){
     return(
         <>
-            <div className="w-full h-fit flex flex-col px-[7%] py-[20px] bg-slate-100">
+            <div className="w-full h-fit flex flex-col px-[7%] py-[100px] bg-slate-100">
                 
                 <div className="w-full flex flex-col text-center">
                     <div className="text-6xl font-bold mb-[1%]">
@@ -59,12 +59,12 @@ export default function Main(){
                 </div>
                 
                 <div className="w-full flex justify-between items-center flex-wrap">
-                    {stepsToJoin.map((step,i) => <JoinStep key={i} step={step}/>)}
+                    {stepsToJoin.map((step,i) => <JoinStep key={i} step={step} index={i} />)}
                 </div>
                 
                 <div className="w-full flex">
-                    * For forms AOC-4 and MGT-7, you will be charged a penalty of ₹200 <b>everyday</b> until you file the form . 
-                        There is no maximum penalty amount. So, if you don't file the form for a year, you will owe ₹73,000 per form.
+                    *For forms AOC-4 and MGT-7, you will be charged a penalty of ₹200 everyday until you file the form . 
+                    There is no maximum penalty amount. So, if you don't file the form for a year, you will owe ₹73,000 per form.
                 </div>
             </div>
         </>

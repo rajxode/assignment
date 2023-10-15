@@ -2,11 +2,20 @@
 
 
 export default function JoinStep(props) {
+    const { index } = props;
     const { heading , info , due , fees } = props.step;
 
     return (
-        <div className="w-[405px] h-[266px] rounded-lg shadow-xl my-4
-                        flex flex-col p-6 justify-between">
+        <>
+        <div className="w-[405px] h-[266px] rounded-2xl shadow-xl my-4
+                        flex flex-col p-6 justify-between bg-white relative">
+            
+            <div className="w-[40px] h-[40px] absolute -top-2 -left-3 rounded text-white 
+                        flex justify-center items-center font-bold text-lg"
+                style={{background:"linear-gradient(90.97deg, #0076CE 26.63%, #9400D3 65.81%)"}}>
+                {index + 1}<sup>th</sup>
+            </div>
+        
             <div className="w-full h-[45%] px-1">
                 <div className="text-center font-bold text-lg">
                     {heading}
@@ -36,5 +45,6 @@ export default function JoinStep(props) {
                 </div>
             </div>
         </div>
+    </>
     )
 }
