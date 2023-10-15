@@ -12,7 +12,7 @@ export default function Navbar(){
                     </div>
                     
                     <div className="flex items-center w-4/5">
-                        <ul className="font-semibold">
+                        <ul className="font-bold">
                             <li className="inline-block mx-3">
                                 <select id="solution">
                                     <option>
@@ -42,7 +42,7 @@ export default function Navbar(){
                     </div>  
                 </div>
 
-                <div className="flex justify-around w-[10%]"> 
+                <div className="flex justify-between w-[10%]"> 
                     <button className="border px-2 py-[2px] rounded border-blue-400 text-blue-400 font-semibold">
                         Login
                     </button>

@@ -2,11 +2,11 @@
 
 export default function Header(){
     return(
-        <div className="w-full h-[70vh] flex px-[7%] py-[20px] justify-between bg-slate-100" 
+        <div className="w-full h-[80vh] flex px-[7%] py-[20px] justify-between bg-slate-100" 
             style={{backgroundImage: "linear-gradient(138deg, rgb(255 255 255) 0%, rgb(213 241 253) 100%)"}} >
             
-            <div className="w-1/2 h-full flex flex-col my-6">
-                <div className="mb-6 h-2/3 flex flex-col ">
+            <div className="w-1/2 h-full flex flex-col justify-around">
+                <div className="w-full h-fit mt-[4%] flex flex-col ">
                     <div className="text-6xl font-bold mb-[1%]">
                         Find
                         <span style={{background: "linear-gradient(90.97deg, #0076CE 26.63%, #9400D3 65.81%)" , WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent"}}> Partners </span>
@@ -18,7 +18,7 @@ export default function Header(){
                     </div>
                 </div>
                 
-                <div className="w-full h-1/3">
+                <div className="w-full h-1/5">
                     <input 
                         type="text" 
                         placeholder="Search by name"
