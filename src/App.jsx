@@ -1,8 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 
+import { UserContext } from "./ContextAPI/userContext"
 import LandingPage from "./Pages/LandingPage"
 import DetailsPage from "./Pages/DetailsPage"
-import HomePage from "./Pages/HomePage"
+import HomePage from "./Pages/HomePage";
+import ErrorPage from "./Pages/ErrorPage";
 
 function App() {
 
@@ -10,16 +12,18 @@ function App() {
     {
       path:'/',
       element:<LandingPage />,
-      errorElement:<Error />,
+      errorElement:<ErrorPage />,
       children:[
         { index:true , element:<HomePage /> },
-        { path:'/detail' , element:<DetailsPage /> }
+        { path:'/detail' , element:<DetailsPage /> },
       ]
     }
   ])
 
   return (
-    <RouterProvider router={router} />
+    <UserContext>
+      <RouterProvider router={router} />
+    </UserContext>
   )
 }
 

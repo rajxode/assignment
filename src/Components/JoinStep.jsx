@@ -7,7 +7,7 @@ export default function JoinStep(props) {
 
     return (
         <>
-        <div className="w-[405px] h-[266px] rounded-2xl shadow-xl my-4
+        <div className="w-full md:w-[350px] lg:w-[405px] h-[266px] rounded-2xl shadow-xl my-4
                         flex flex-col p-6 justify-between bg-white relative">
             
             <div className="w-[40px] h-[40px] absolute -top-2 -left-3 rounded text-white 

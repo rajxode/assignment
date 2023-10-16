@@ -1,15 +1,18 @@
+import { useNavigate } from "react-router-dom";
+import { useUserContext } from "../ContextAPI/userContext";
 
 
-export default function UserCard(){
+export default function UserCard(props){
 
-    const user = {
-        "id": 1,
-        "name": "Michael Jackson",
-        "image": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?fit=crop&w=800&q=80",
-        "intro": "Expertise in accounting and finance, specializing in financial statements and auditing.",
-        "rating": 4.8,
-        "reviewCount": 89,
-        "price": "€4,370",
+    const { user } = props;
+    const navigate = useNavigate();
+    const { setSingleUser } = useUserContext();
+
+
+    const handleClick = (e) =>{
+        e.preventDefault();
+        setSingleUser(user);
+        navigate('/detail');
     }
 
     return (
@@ -20,7 +23,8 @@ export default function UserCard(){
             </div>
             <div className="w-full h-1/2 p-2 flex flex-col justify-between">
                 <div className="h-3/5 flex flex-col text-base">
-                    <div className="font-bold text-xl">
+                    <div className="font-bold text-xl cursor-pointer"
+                        onClick={handleClick}>
                         {user.name}
                         <span className="float-right">
                             {user.price}
@@ -35,7 +39,11 @@ export default function UserCard(){
                 </div>
                 <div className="h-fit">
                     <button className="w-full bg-sky-600 text-white font-semibold
-                                py-1 rounded-md text-lg shadow">View Services</button>
+                                py-1 rounded-md text-lg shadow"
+                            onClick={handleClick}                           
+                        >
+                        View Services
+                    </button>
                 </div>
             </div>
         </div>

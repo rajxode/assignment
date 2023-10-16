@@ -34,9 +34,9 @@ const features = [
 export default function Features(){
     return(
         <>
-            <div className="w-full h-[85vh] flex px-[7%] py-[100px] bg-slate-100 justify-between">
+            <div className="w-full flex flex-col md:flex-row px-[7%] py-[100px] bg-slate-100 justify-between">
                 
-                <div className="w-1/2 flex flex-col h-full">
+                <div className="w-full md:w-1/2 flex flex-col h-full">
                     <div className="text-6xl font-bold mb-[1%]">
                         <span style={{background: "linear-gradient(90.97deg, #0076CE 26.63%, #9400D3 65.81%)" , 
                                 WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent"}}
@@ -55,7 +55,7 @@ export default function Features(){
                 </div>
                 
                 
-                <div className="w-[45%] flex justify-between h-full">
+                <div className="w-full md:w-1/2 lg:w-[45%] flex justify-between h-full">
                     
                     <div className="w-3/5 flex flex-col justify-between h-full">
                         

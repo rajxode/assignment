@@ -5,7 +5,7 @@ export default function Price(props){
     const { price , time , task } = props;
 
     return (
-        <div className="w-full rounded-lg shadow-lg h-[160px] px-[4%] 
+        <div className="w-full rounded-lg shadow-lg h-auto min-h-[160px] px-[4%] 
                 py-[3%] flex flex-col justify-between my-[5%]">
             <div className="w-full h-2/5 flex justify-between text-xl">
                 <div>

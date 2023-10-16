@@ -5,7 +5,7 @@ export default function SingleFeature(props) {
     const { icon , heading , text} = props.feature;
 
     return (
-        <div className="w-[300px] h-[95px] m-[2%]
+        <div className="w-full sm:w-[40%] md:w-[250px] lg:[300px] min-h-[95px] m-[2%]
                         flex p-1 justify-between ">
             
             <div className="w-[30%] h-full p-1">
