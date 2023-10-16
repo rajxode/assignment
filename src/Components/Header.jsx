@@ -1,11 +1,21 @@
+
+// header section of homepage
+
+// hook
 import { useState } from "react";
+
+// context api
 import { useUserContext } from "../ContextAPI/userContext"
+
+// render the single CA card
 import UserCard from "./UserCard";
 
 
 export default function Header(){
 
+    // list of all the CA
     const {userList} = useUserContext();
+    // searchBar text
     const [search,setSearch] = useState('');
 
     return(
@@ -14,6 +24,8 @@ export default function Header(){
                 style={{backgroundImage: "linear-gradient(138deg, rgb(255 255 255) 0%, rgb(213 241 253) 100%)"}} >
                 
                 <div className="w-full lg:w-1/2 h-full flex flex-col justify-around">
+                    
+                    {/* section heading */}
                     <div className="w-full h-fit mt-[4%] flex flex-col ">
                         <div className="text-6xl font-bold mb-[1%]">
                             Find
@@ -26,6 +38,8 @@ export default function Header(){
                         </div>
                     </div>
                     
+
+                    {/* input bar to serach CA */}
                     <div className="w-full h-1/5">
                         <input 
                             type="text" 
@@ -43,6 +57,7 @@ export default function Header(){
                     
                 </div>
                 
+                {/* image on header */}
                 <div className="w-full lg:w-[45%] mt-[2%] lg:mt-0 h-full flex flex-wrap justify-between">
                     <div className="w-[32%] h-full">
                         <img src='/head-1.png' alt="image" className="w-full" />
@@ -56,6 +71,8 @@ export default function Header(){
                 </div>
             </div>
 
+
+            {/* list of searched CA */}
             <div className="w-full px-[7%] py-[20px] flex flex-wrap justify-between bg-slate-100">
                 {
                     userList

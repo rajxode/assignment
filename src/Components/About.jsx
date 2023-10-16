@@ -1,12 +1,17 @@
 
-
+// render the about section on details page
 export default function About(props){
 
+    // data to show 
     const { from , partnerSince , averageResponseTime , description , services , benefits } = props.about;
 
-    return (
+
+    // render the section
+    return (    
         <div className="w-full p-[3%] flex flex-col justify-between">
             <div className="w-full flex justify-between my-[2%]">
+                
+                {/* address */}
                 <div className="w-1/5">
                     <span className="text-sm font-semibold text-slate-400">
                         FROM
@@ -14,6 +19,7 @@ export default function About(props){
                     <br/>
                     {from}
                 </div>
+                {/* details */}
                 <div className="w-1/5">
                     <span className="text-sm font-semibold text-slate-400">
                         PARTNER SINCE
@@ -21,6 +27,7 @@ export default function About(props){
                     <br/>
                     {partnerSince}
                 </div>
+                {/* response time */}
                 <div className="w-2/5">
                     <span className="text-sm font-semibold text-slate-400">
                         AVERAGE RESPONSE TIME
@@ -29,6 +36,7 @@ export default function About(props){
                     {averageResponseTime}
                 </div>
             </div>
+            {/* description of CA */}
             <div className="w-full my-[2%]">
                 <span className="text-sm font-semibold text-slate-400">
                     ABOUT
@@ -38,6 +46,8 @@ export default function About(props){
                 </div>
             </div>
             <div className="w-full flex justify-between my-[2%]">
+                
+                {/* services by the CA */}
                 <div className="w-2/5">
                     <span className="text-sm font-semibold text-slate-400">
                         SERVICES | OFFER
@@ -48,6 +58,8 @@ export default function About(props){
                         </ul>
                     </div>
                 </div>
+
+                {/* Benefits of CA */}
                 <div className="w-2/5">
                     <span className="text-sm font-semibold text-slate-400">
                         WHY ME ?

@@ -1,9 +1,11 @@
 
+// render the footer of page
 
 export default function Footer(){
 
     return(
         <>
+        {/* background with gradient */}
         <div className="min-h-[250px] flex flex-col text-white shrink-0 pt-[2%]" 
             style={{backgroundImage: "linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%)"}}>
 
@@ -12,18 +14,24 @@ export default function Footer(){
                 <div className="w-full md:h-4/5 flex flex-col md:flex-row justify-between">
                     
                     <div className="w-full md:w-1/5 md:h-full flex flex-col my-4 md:my-0">
+                        
+                        {/* brand logo */}
                         <div>
-
+                            <img src="/logo.png" alt="logo" />
                         </div>
 
+                        {/* text  */}
                         <div>
                             India's first platform dedicated to simplifying partner search
                         </div>
                     </div>
                     
+
+                    {/* list of dummy links */}
                     <div className="w-full md:w-3/5 md:h-full flex justify-around my-4 md:my-0">
                         
                         <div className="w-1/5 flex flex-col h-full">
+                            {/* company related */}
                             <h1 className="font-semibold w-full">
                                 COMPANY
                             </h1>
@@ -39,6 +47,7 @@ export default function Footer(){
                         </div>
                         
                         <div className="w-1/5 flex flex-col h-full">
+                            {/* solutions related */}
                             <h1 className="font-semibold w-full">
                                 SOLUTIONS
                             </h1>
@@ -57,6 +66,7 @@ export default function Footer(){
                         </div>
                         
                         <div className="w-1/5 flex flex-col h-full">
+                            {/* resource related */}
                             <h1 className="font-semibold w-full">
                                 RESOURCES
                             </h1>
@@ -69,6 +79,7 @@ export default function Footer(){
                         </div>
                         
                         <div className="w-1/5 flex flex-col h-full">
+                            {/* support related */}
                             <h1 className="font-semibold w-full">
                                 SUPPORT
                             </h1>
@@ -81,6 +92,7 @@ export default function Footer(){
                         </div>
 
                         <div className="w-1/5 flex flex-col h-full">
+                            {/* legal liks */}
                             <h1 className="font-semibold w-full">
                                 LEGAL
                             </h1>
@@ -101,10 +113,14 @@ export default function Footer(){
                 <hr />
                 
                 <div className="w-full flex flex-col md:flex-row justify-between items-center h-1/5">
+                    
+                    {/* address of organisation */}
                     <div className="w-full md:w-[90%] my-3 md:my-0">
                         Sambhaji Nagar, No2, St. Antony Road, Chembur, Mumbai - 400071, Maharashtra
                     </div>
+                    
 
+                    {/* social links */}
                     <div className="flex justify-around w-full md:w-[10%] my-3 md:my-0">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
@@ -115,6 +131,8 @@ export default function Footer(){
             
             </div>
         </div>
+
+        {/* rights resevered */}
         <div className="w-full min-h-[40px] px-2 flex items-center justify-center bg-black text-white">
             <p className="text-sm">
                 Registerd trademark of India Private Limited 2023 loerumipsum Inc. All Rights Reserved.
